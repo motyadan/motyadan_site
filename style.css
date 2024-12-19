@@ -1,0 +1,35 @@
+body {
+    background-color: #ffffffdb;
+    place-items: center;
+    display: grid;
+}
+
+.button {
+    background-color: rgb(0, 255, 8);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    place-items: center;
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+  }
+  99% {
+    background-color: green;
+  }
+}
+
+.button:hover {
+    animation: example 0.5s infinite;
+}
+
+.photo {
+    height: auto;
+    width: 300px;
+}
+
+.photo:hover {
+    width: 100px;
+}
