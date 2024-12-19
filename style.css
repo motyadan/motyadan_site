@@ -1,35 +1,45 @@
 body {
-    background-color: #ffffffdb;
-    place-items: center;
-    display: grid;
+  font-family: Arial, sans-serif;
+  margin: 50px;
+  background-color: #000000;
 }
 
-.button {
-    background-color: rgb(0, 255, 8);
-    border: none;
-    padding: 10px 30px;
-    border-radius: 10px;
-    place-items: center;
+
+.contain {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: aqua;
+  padding-left: 3px;
+  width: 63%;
+  border-radius: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 50px); /* 3 столбца по 100px */
+  grid-template-rows: repeat(5, 50px); /* 2 строки по 100px */
+  gap: 6px; /* Отступы между элементами */
+  box-shadow: 0px 0px 30px aqua;
 }
 
-@keyframes example {
-  0% {
-    background-color: red;
-  }
-  99% {
-    background-color: green;
-  }
+.out {
+  background-color: aqua;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px aqua;
+  border: none;
+  width: 63%;
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 30px;
+  font-family: cursive;
 }
 
-.button:hover {
-    animation: example 0.5s infinite;
-}
-
-.photo {
-    height: auto;
-    width: 300px;
-}
-
-.photo:hover {
-    width: 100px;
+button {
+  font-family: cursive;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: white;
+  border-radius: 100%;
 }
