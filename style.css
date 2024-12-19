@@ -1,22 +1,18 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 50px;
+  margin: 0;
   background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
-
-.contain {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: aqua;
-  padding-left: 3px;
-  width: 63%;
-  border-radius: 5%;
-  display: grid;
-  grid-template-columns: repeat(4, 50px); /* 3 столбца по 100px */
-  grid-template-rows: repeat(5, 50px); /* 2 строки по 100px */
-  gap: 6px; /* Отступы между элементами */
-  box-shadow: 0px 0px 30px aqua;
+header {
+  width: 220px; /* Ограничиваем ширину */
+  margin-bottom: 10px;
 }
 
 .out {
@@ -25,11 +21,25 @@ body {
   border-radius: 10px;
   box-shadow: 0px 0px 30px aqua;
   border: none;
-  width: 63%;
-  margin-bottom: 10px;
+  width: 100%; /* Растягиваем поле на всю ширину header */
   text-align: right;
   font-size: 30px;
   font-family: cursive;
+}
+
+.contain {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: aqua;
+  padding-left: 3px;
+  padding-right: 3px;
+  width: auto; /* Ограничиваем ширину */
+  border-radius: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 50px); /* 4 столбца с равной шириной */
+  grid-template-rows: repeat(5, 50px); /* 5 строк по 50px */
+  gap: 6px; /* Можно уменьшить отступы между строками, если нужно */
+  box-shadow: 0px 0px 30px aqua;
 }
 
 button {
@@ -42,4 +52,6 @@ button {
   border: none;
   color: white;
   border-radius: 100%;
+  width: 50px; /* Устанавливаем фиксированную ширину для кнопок */
+  height: 50px; /* Устанавливаем фиксированную высоту для кнопок */
 }
