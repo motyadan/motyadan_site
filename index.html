@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
 <html>
     <body>
-        <button class="button" id="butt">Прит</button>
-        <img src="screenshot.png" class="photo">
+        <input type="text" class="out" value="" readonly id="out">
+        <div class="contain">
+            <button id="7" onclick="append(7)">7</button>
+            <button id="8" onclick="append(8)">8</button>
+            <button id="9" onclick="append(9)">9</button>
+            <button id="*" onclick="append('*')">*</button>
+            <button id="4" onclick="append(4)">4</button>
+            <button id="5" onclick="append(5)">5</button>
+            <button id="6" onclick="append(6)">6</button>
+            <button id="-" onclick="append('-')">-</button>
+            <button id="1" onclick="append(1)">1</button>
+            <button id="2" onclick="append(2)">2</button>
+            <button id="3" onclick="append(3)">3</button>
+            <button id="+" onclick="append('+')">+</button>
+            <button id="0" onclick="append(0)">0</button>
+            <button id="." onclick="append('.')">.</button>
+            <button id="/" onclick="append('/')">/</button>
+            <button id="=" onclick="answered()">=</button>
+            <button id="ce" onclick="clear_all()">CE</button>
+        </div>
     </body>
 </html>
+<script src="script.js"></script>
