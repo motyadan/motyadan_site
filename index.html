@@ -1,30 +1,22 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
-<html>
-    <body>
-        <header>
-            <input type="text" class="out" value="" readonly id="out">
-        </header>
-        <div class="contain">
-
-            <button id="7" onclick="append(7)">7</button>
-            <button id="8" onclick="append(8)">8</button>
-            <button id="9" onclick="append(9)">9</button>
-            <button id="*" onclick="append('*')">*</button>
-            <button id="4" onclick="append(4)">4</button>
-            <button id="5" onclick="append(5)">5</button>
-            <button id="6" onclick="append(6)">6</button>
-            <button id="-" onclick="append('-')">-</button>
-            <button id="1" onclick="append(1)">1</button>
-            <button id="2" onclick="append(2)">2</button>
-            <button id="3" onclick="append(3)">3</button>
-            <button id="+" onclick="append('+')">+</button>
-            <button id="0" onclick="append(0)">0</button>
-            <button id="." onclick="append('.')">.</button>
-            <button id="/" onclick="append('/')">/</button>
-            <button id="=" onclick="answered()">=</button>
-            <button id="ce" onclick="clear_all()">CE</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Python Шаблоны</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Python Шаблоны</h1>
+    </header>
+    <main>
+        <div class="cont" id="calc">
+            <img src="content/calcul.png" alt="Image" class="img">
+            <div class="opt">Калькулятор</div>
+            <div class="desc">Стандартный калькулятор с интерфейсом</div>
         </div>
-    </body>
-</html>
+    </main>
+</body>
 <script src="script.js"></script>
+</html>
